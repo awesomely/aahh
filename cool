@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter a number and click OK:</p>
+
+<input id="firstbox" type="number" min="10" max="5000">
+<button onclick="myFunction()">OK</button>
+
+<p>If the number of cars is less than 10 or greater than 5000 an error message will be displayed.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var cars = document.getElementById("firstbox");
+    if (cars.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+        document.getElementById("demo").innerHTML = "Input OK";
+    } 
+} 
+</script>
+
+</body>
+</html>
+
